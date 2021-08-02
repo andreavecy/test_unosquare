@@ -1,0 +1,5 @@
+<%= form_with url: "/process_ip", method: :post do |form| %>
+  <%= form.label :process_ip_address, "Valid IP:" %>
+  <%= form.text_field :process_ip_address, multiple: true %>
+  <%= form.submit "Valid" %>
+<% end %>
